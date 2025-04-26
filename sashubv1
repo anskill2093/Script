@@ -1,0 +1,135 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local UICorner = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Close = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local ImageButton = Instance.new("ImageButton")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.349999994, 0, 0.289999992, 0)
+Frame.Size = UDim2.new(0, 568, 0, 347)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(94, 165, 83)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = Frame
+
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = Frame
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0143385334, 0, 0.0217643976, 0)
+Frame_2.Size = UDim2.new(0, 550, 0, 38)
+
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = Frame_2
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.130307838, 0, 0.209479079, 0)
+TextLabel.Size = UDim2.new(0, 407, 0, 36)
+TextLabel.Font = Enum.Font.LuckiestGuy
+TextLabel.Text = "Hub by Anskill2093 v1"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0143385334, 0, 0.148450866, 0)
+ScrollingFrame.Size = UDim2.new(0, 550, 0, 295)
+
+TextButton.Parent = ScrollingFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(0, 196, 0, 45)
+TextButton.Font = Enum.Font.LuckiestGuy
+TextButton.Text = "Jerk"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 35.000
+TextButton.TextWrapped = true
+TextButton.TextYAlignment = Enum.TextYAlignment.Bottom
+
+UICorner_3.Parent = TextButton
+
+Close.Name = "Close"
+Close.Parent = Frame
+Close.BackgroundColor3 = Color3.fromRGB(140, 140, 140)
+Close.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Close.BorderSizePixel = 0
+Close.LayoutOrder = 2
+Close.Position = UDim2.new(0.920500398, 0, 0.024483541, 0)
+Close.Size = UDim2.new(0, 35, 0, 37)
+Close.ZIndex = 2
+Close.Font = Enum.Font.Cartoon
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 9)
+UICorner_4.Parent = Close
+
+ImageButton.Parent = ScreenGui
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.0159362555, 0, 0.232587069, 0)
+ImageButton.Size = UDim2.new(0, 76, 0, 73)
+ImageButton.Image = "http://www.roblox.com/asset/?id=104894052955864"
+
+UICorner_5.CornerRadius = UDim.new(1, 0)
+UICorner_5.Parent = ImageButton
+
+-- Scripts:
+
+local function PHAH_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	loadstring(game:HttpGet("https://pastebin.com/raw/hkyuHQ7Y"))()
+end
+coroutine.wrap(PHAH_fake_script)()
+local function FOBZ_fake_script() -- Close.TweenGui 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local ScreenGui = script.Parent.Parent
+		ScreenGui:TweenPosition(UDim2.new(0, 282,-1, 0),"Out","Elastic",0.5,true)
+	end)
+end
+coroutine.wrap(FOBZ_fake_script)()
+local function GLKKLU_fake_script() -- ImageButton.TweenGui 
+	local script = Instance.new('LocalScript', ImageButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local ScreenGui  = script.Parent.Parent.Frame
+		ScreenGui:TweenPosition(UDim2.new(0.35, 0 ,0.29, 0),"Out","Elastic",0.5,true)
+	end)
+end
+coroutine.wrap(GLKKLU_fake_script)()
