@@ -1,5 +1,3 @@
--- Базовый ESP скрипт (для образовательных целей)
-
 local Players = game:GetService("Players")
 local Camera = workspace.CurrentCamera
 local RunService = game:GetService("RunService")
