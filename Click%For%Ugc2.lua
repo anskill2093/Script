@@ -14,14 +14,14 @@ end)
 local Settings = {
     AutoClick = {
         Enabled = false,
-        Delay = 0.5,
+        Delay = 0.01,
         MaxClicks = 200,
         PauseTime = 15,
         LastClick = 0
     },
     AutoSpin = {
         Enabled = false,
-        Delay = 30,
+        Delay = 15,
         LastSpin = 0
     },
     GUI = {
@@ -84,7 +84,7 @@ Icon.Name = "Icon"
 Icon.Size = UDim2.new(0, 30, 0, 30)
 Icon.Position = UDim2.new(0, 5, 0, 5)
 Icon.BackgroundTransparency = 1
-Icon.Image = "rbxassetid://106900523989296"
+Icon.Image = "rbxassetid://83545195110456"
 Icon.Parent = TopBar
 
 local CloseButton = Instance.new("TextButton")
